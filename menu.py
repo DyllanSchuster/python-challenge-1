@@ -201,7 +201,7 @@ for item in order_list:
 
     # 8. Calculate the number of spaces for formatted printing
     table_price = f'${item_price:.2f}'
-    print(f"{item_quantity}x{item_name:<30}{table_price:>8}")
+    print(f"{item_name:<25}{table_price:>8}{item_quantity:>10}")
 
     total_price += item_price * item_quantity
     # 9. Create space strings
